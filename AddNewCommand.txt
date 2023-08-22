@@ -1,0 +1,13 @@
+Command = {
+    "name": "[name]",
+    "type": 1,
+    "description": "[description]",
+}
+
+headers = {
+  "Authorization": "Bot " + Token
+}
+
+response = request.post("https://discord.com/api/v10/applications/1138317552204927016/commands", headers=headers, json=Command )
+
+print(response.content)
