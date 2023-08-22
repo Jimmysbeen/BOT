@@ -10,3 +10,4 @@ env:
 async def on_ready():
   print("I'm online!".format(client))
 
+client.run(Token)
